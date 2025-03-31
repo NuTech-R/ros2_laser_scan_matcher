@@ -42,7 +42,16 @@ ament_target_dependencies(laser_scan_matcher
   nav_msgs
 )
 
-install(TARGETS laser_scan_matcher DESTINATION lib/${PROJECT_NAME})
+# configフォルダのインストール
+install(DIRECTORY config/
+  DESTINATION share/${PROJECT_NAME}/config
+)
 
+# launchフォルダのインストール
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch
+)
+
+install(TARGETS laser_scan_matcher DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
