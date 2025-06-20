@@ -5,7 +5,7 @@ Ported to ros2 version of laser-scan-matcher by [scan_tools](https://github.com/
 ## Installation
 ```bash
 cd ~/ros2_ws/src
-git clone git@github.com:Nexis-R/ros2_laser_scan_matcher.git
+git clone git@github.com:NuTech-R/ros2_laser_scan_matcher.git
 cd ros2_laser_scan_matcher
 sudo rosdep update
 rosdep install -r -y -i --from-paths .
